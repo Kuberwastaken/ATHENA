@@ -1,0 +1,45 @@
+# Core functionality
+numpy>=1.19.0
+torch>=1.9.0
+transformers>=4.18.0
+pydantic>=1.9.0
+fastapi>=0.75.0
+uvicorn>=0.17.0
+python-dotenv>=0.20.0
+
+# Audio processing
+pyaudio>=0.2.11
+librosa>=0.9.1
+webrtcvad>=2.0.10
+sounddevice>=0.4.4
+soundfile>=0.10.3
+
+# Hardware interfaces
+RPi.GPIO>=0.7.0
+rpi-ws281x>=4.3.0  # For LED control
+Pillow>=9.1.0      # For image processing (display)
+
+# Web interface
+jinja2>=3.1.1
+aiofiles>=0.8.0
+websockets>=10.3.0
+python-multipart>=0.0.5
+
+# Skills and extensions
+requests>=2.27.1
+aiohttp>=3.8.1
+pyyaml>=6.0
+pytest>=7.1.1      # For testing
+
+# Optional: specialized components
+# uncomment as needed
+# tensorflow>=2.8.0   # Alternative ML framework
+# flask>=2.1.1        # Alternative web framework
+# matplotlib>=3.5.1   # For visualization
+
+# Development tools
+pytest>=7.1.1
+black>=22.3.0
+flake8>=4.0.1
+mypy>=0.942
+isort>=5.10.1

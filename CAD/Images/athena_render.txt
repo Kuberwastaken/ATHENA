@@ -1,0 +1,11 @@
+ATHENA Device Render Placeholder
+
+This is a placeholder for the 3D render of the ATHENA device. Replace with an actual image file when available.
+
+The render should show the complete device with the following features visible:
+- Cylindrical design with modern aesthetic
+- Speaker grill on top
+- LED ring near the bottom
+- Optional display panel
+- Microphone array holes
+- Overall clean and minimalist design

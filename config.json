@@ -1,0 +1,53 @@
+{
+    "name": "ATHENA",
+    "wake_word": "athena",
+    "voice": {
+        "language": "en-US",
+        "voice_id": "en-US-Standard-C",
+        "speaking_rate": 1.0,
+        "pitch": 0.0
+    },
+    "audio": {
+        "sample_rate": 16000,
+        "channels": 6,
+        "device_name": "ReSpeaker"
+    },
+    "speech_recognition": {
+        "use_cloud": false,
+        "timeout": 10.0,
+        "language": "en-US"
+    },
+    "skills": {
+        "enabled": ["system", "time", "weather", "knowledge", "music"],
+        "paths": ["software/skills"]
+    },
+    "hardware": {
+        "led_enabled": true,
+        "led_count": 24,
+        "led_gpio_pin": 18,
+        "display_enabled": true,
+        "display_type": "ssd1306",
+        "buttons_enabled": true
+    },
+    "api": {
+        "weather": {
+            "provider": "openweathermap",
+            "api_key": "YOUR_API_KEY_HERE"
+        }
+    },
+    "web": {
+        "enabled": true,
+        "port": 8080,
+        "host": "0.0.0.0"
+    },
+    "system": {
+        "language": "en-US",
+        "units": "imperial",
+        "time_format": "12h"
+    },
+    "privacy": {
+        "always_ask_before_cloud": true,
+        "audio_retention_days": 0,
+        "allow_analytics": false
+    }
+}
