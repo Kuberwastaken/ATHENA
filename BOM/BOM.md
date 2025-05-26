@@ -7,7 +7,6 @@
 | Custom PCB | Audio amplification & power management | 1 | $25.00 | $25.00 | Custom design |
 | Speaker Components | Mid-range (3") + tweeter | 1 set | $45.00 | $45.00 | Various suppliers |
 | 3D Printed Case | Custom designed enclosure | 1 | $15.00 | $15.00 | Self-produced |
-| Laser-cut Acrylic | Case components | Various | $15.00 | $15.00 | Local supplier |
 | LCD Display Panel | Information display | 1 | $35.00 | $35.00 | [Adafruit](https://www.adafruit.com/) |
 | Power Supply | 5V 3A power supply | 1 | $12.00 | $12.00 | Various suppliers |
 | Power Management | DC-DC converters, regulators | Various | $8.00 | $8.00 | Various suppliers |
