@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/License-MIT-black" alt="License MIT">
 </p>
 
-## 🎯 Project Overview
+## Project Overview
 
 **ATHENA** (Autonomous Transformer-Based Heuristic Extending Natural-Language Assistant) is an advanced DIY smart speaker that aims to outperform commercial alternatives like Amazon Echo and Google Home by prioritizing privacy, intelligence, and customization.
 
@@ -102,7 +102,7 @@ Current commercial smart speakers are limited by:
 </tr>
 </table>
 
-### 🎯 Project Roadmap
+### Project Roadmap
 
 - [ ] **Phase 1**: Hardware design and component selection
 - [ ] **Phase 2**: Basic software framework
@@ -115,7 +115,7 @@ Current commercial smart speakers are limited by:
 - [ ] **Phase 9**: MCP service integration
 - [ ] **Phase 10**: Final testing and optimization
 
-## 🏗️ (Planned) System Architecture
+## (Planned) System Architecture
 
 ```mermaid
 graph TD
@@ -138,7 +138,7 @@ graph TD
     style B fill:#ea580c
 ```
 
-## 💰 Estimated Bill of Materials & Cost Breakdown
+## Estimated Bill of Materials & Cost Breakdown
 
 <div align="center">
 
@@ -157,7 +157,7 @@ graph TD
 
 </div>
 
-## 🧬 Technology Stack
+## Technology Stack
 
 <div align="center">
 
@@ -176,7 +176,7 @@ Voice Input → Noise Cancellation → Wake Word → Whisper STT → LLaMA → P
 </tr>
 </table>
 
-### 🔧 **Development Stack**
+### **Development Stack**
 - **Hardware**: Raspberry Pi 4, Custom PCB Design
 - **Audio**: ALSA, PyAudio, Advanced noise processing
 - **AI Models**: Whisper, LLaMA, Piper TTS
@@ -186,7 +186,7 @@ Voice Input → Noise Cancellation → Wake Word → Whisper STT → LLaMA → P
 
 ## 🚀 Getting Started
 
-### 📋 Prerequisites
+### Prerequisites
 
 <table>
 <tr>
@@ -213,7 +213,7 @@ Voice Input → Noise Cancellation → Wake Word → Whisper STT → LLaMA → P
 </tr>
 </table>
 
-### 📥 Quick Installation
+### Quick Installation
 
 ```bash
 # Clone the repository
@@ -238,16 +238,16 @@ python main.py
 <td width="50%">
 
 ### **Hardware Inspiration**
-- [Mycroft Mark II](https://mycroft.ai/) - Open source voice assistant
-- [Seeed Studio ReSpeaker](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html) - Microphone array design
-- [ReSpeaker Implementation](https://github.com/respeaker) - Community implementations
-- [Home Assistant Atom](https://www.home-assistant.io/) - Smart home integration
+- [Mycroft Mark II](https://mycroft-ai.gitbook.io/docs) - Open source voice assistant
+- [Seeed Studio ReSpeaker](https://wiki.seeedstudio.com/ReSpeaker/) - Microphone array design
+- [ReSpeaker Implementation](https://www.youtube.com/watch?v=q6uGNm-DCNc) - Community implementations
+- [Home Assistant Atom](https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote/) - Smart home integration
 
 </td>
 <td width="50%">
 
 ### **Technical Resources**
-- [NetworkChuck Video](https://www.youtube.com/watch?v=your-video) - Initial inspiration
+- [NetworkChuck Home Assistant Video](https://www.youtube.com/watch?v=XvbVePuP7NY) - Initial inspiration
 - [Asian Mom Project](https://asianmom.kuber.studio/) - Similar AI pipeline demo I made
 - OpenAI Whisper documentation
 - Meta LLaMA model resources
