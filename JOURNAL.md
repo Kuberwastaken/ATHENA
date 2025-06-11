@@ -76,6 +76,8 @@ another thing that a lot of open source assistants struggle with at the moment i
 
 Using an LLM completely solves that, which is pretty cool
 
+**Total time spent: 6h**
+
 # June 11th, 2025: Function and Tool Calling
 
 Been thinking more about how to actually make the LLM *do* things, I mean, getting the prompt to mention all the things it can do and functions it can call is obvious but connecting it to things is the actual challenge
@@ -102,3 +104,5 @@ For implementation (at least for now):
 - **Web Search**: DuckDuckGo integration for general queries
 - **Smart Home**: Eventually IoT device control - maybe integrating with home assistant but that's another beast that I'll touch way later
 - **System Functions**: Volume, time, weather, etc.
+
+**Total time spent: 3h**
