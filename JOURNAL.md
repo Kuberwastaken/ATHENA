@@ -43,3 +43,62 @@ Features that I really want:
 - custom commands - ideally without making the prompt too long? Gonna be interesting to see how this fits with LLMs
 
 **Total time spent: 6h**
+
+# June 10th, 2025: Actually picking up specifics
+
+Played around with a few models today that can actually run on the hardware as an LLM
+As a rule of thumb, we AT LEAST need:
+- Whisper Base+ (tiny is really bad) [at least 73M parameters]
+- Any sub 1B model for the actual processing [Llama 3.2 1.5B or Qwen 0.6B]
+- TTS Model (Kokoro v1.0, about 82M parameters)
+
+So optimistically we can get everything running under at or about under 2B parameters, which is huge 
+if it runs well enough, I'd like to experiment with bigger models, but yes, the prompting would have to be greatly worked upon
+
+Here's a very basic idea in my head of how it would work for something like "What is the weather like today?":
+
+**Speech → Text**: Whisper converts speech to "What is the weather like today?"
+
+**Text → Function Call**: LLM analyzes text and outputs:
+```json
+{"function": "weather", "parameters": {"location": "New Delhi"}}
+```
+
+**Function Execution**: Our function registry looks up `weather` and uses a weather API
+
+**Response Generation**: LLM gets the function result and generates a natural response: "The weather in New Delhi is 46 degrees, hope you don't boil to death"
+
+**Text → Speech**: Kokoro TTS converts response to speech with one of the voices we choose
+
+another thing that a lot of open source assistants struggle with at the moment is understanding intent, if you say 
+"Turn on the kitchen lights" it would turn it on
+"Turn the lights inside the kitchen" might not - which honestly sucks because we don't always say all the sentences exactly same 
+
+Using an LLM completely solves that, which is pretty cool
+
+# June 11th, 2025: Function and Tool Calling
+
+Been thinking more about how to actually make the LLM *do* things, I mean, getting the prompt to mention all the things it can do and functions it can call is obvious but connecting it to things is the actual challenge
+
+What I learnt about **function calling** - when I say "play The Weeknd on Spotify", the LLM needs to:
+
+1. Understand the intent (play music)
+2. Extract entities (artist: "The Weeknd", service: "Spotify") 
+3. Call the appropriate function: `play_music(artist="The Weeknd", service="spotify")`
+
+Probably only gonna focus on spotify now because free API I think youtube music is free too but with more limitations on the API requests but it isn't documented well so welp.
+
+As I said yesterday, using an LLM for this is WAY better because I can say anything like these and it'll pick it up
+- "Put on some Weeknd"
+- "I want to hear The Weeknd" 
+- "Play music by The Weeknd"
+- "Start playing The Weeknd on Spotify"
+
+All map to the same function call.
+
+For implementation (at least for now):
+- **Function Registry**: Centralized catalog of available functions
+- **Music Integration**: Spotify/YouTube Music APIs with proper auth
+- **Web Search**: DuckDuckGo integration for general queries
+- **Smart Home**: Eventually IoT device control - maybe integrating with home assistant but that's another beast that I'll touch way later
+- **System Functions**: Volume, time, weather, etc.

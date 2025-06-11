@@ -33,6 +33,28 @@
         "weather": {
             "provider": "openweathermap",
             "api_key": "YOUR_API_KEY_HERE"
+        },
+        "search": {
+            "default_provider": "duckduckgo",
+            "google": {
+                "api_key": "YOUR_GOOGLE_API_KEY",
+                "search_engine_id": "YOUR_SEARCH_ENGINE_ID"
+            },
+            "bing": {
+                "api_key": "YOUR_BING_API_KEY"
+            }
+        }
+    },
+    "music": {
+        "default_service": "spotify",
+        "spotify": {
+            "client_id": "YOUR_SPOTIFY_CLIENT_ID",
+            "client_secret": "YOUR_SPOTIFY_CLIENT_SECRET",
+            "redirect_uri": "http://localhost:8080/callback",
+            "device_id": null
+        },
+        "youtube_music": {
+            "enabled": true
         }
     },
     "web": {
