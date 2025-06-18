@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Version-Alpha-black" alt="Version Alpha">
     <img src="https://img.shields.io/badge/License-MIT-black" alt="License MIT">
 </p>
-
+ 
 ## Project Overview
 
 **ATHENA** (Autonomous Transformer-Based Heuristic Extending Natural-Language Assistant) is an advanced DIY smart speaker that aims to outperform commercial alternatives like Amazon Echo and Google Home by prioritizing privacy, intelligence, and customization.
